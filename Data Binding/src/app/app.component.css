@@ -1,0 +1,35 @@
+button
+{
+    width: 5em;
+    height: 3em;
+    border-color: white;
+    border-radius: 1em;
+    outline: none;
+}
+.blue
+{
+    width: 5em;
+    height: 3em;
+    border-color: blue;
+    border-radius: 1em;
+}
+.green
+{
+    width: 5em;
+    height: 3em;
+    border-color: green;
+    border-radius: 1em;
+}
+.red
+{
+    width: 5em;
+    height: 3em;
+    border-color: red;
+    border-radius: 1em;
+}
+hr
+{
+    border-color: aliceblue;
+    border-width: 20px;
+
+}

@@ -1,0 +1,74 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<hr>
+<!--  ******* PROPERTY BINDING  *********   -->
+<input type="text" value=""><br>
+<input type="text" value="abcd"><br>
+
+
+<!--  Property Binding(actually it's not binding) by using Hard coded  -->
+<input type="text" value="abcd"><br>
+
+
+<!--  Property Binding Using by putting attribute in [] squere bracket  -->
+<input type="text" [value]="title"><br>
+
+
+<!--  Property Bindeng Using String Interpollation...  -->
+<input type="text" value="{{title}}" disabled="true"><br>
+<!--  in the case of disable property...value is true or false 
+      But in the String interpollation the true is not working...
+      But false is working...   -->
+
+<input type="text"  bind-value="name"><br>
+<button> {{name}} !</button><br>
+<button>Button1</button><h3 style="text-align: right">PROPERTY BINDING</h3>
+<hr>
+<!--  *********   CLASS BINDING  *********    -->
+<!--     Class Binding by Hard Coded     -->
+<button class="blue">Button2</button>
+
+<!--  Class Binding Using [] squere bracket  -->
+<button [class]="red_variable">Button3</button>
+
+<!--  Class Binding Using [] squere bracket and adding attribute_value with Attribute -->
+<button [class.blue]="green_variable">Button4</button><!--  Value may be true ro false -->
+
+<!--  Class Binding using String Interpolation  -->
+<button class="{{grn}}">{{name}}</button> <br><h3 style="text-align: right">CLASS BINDING</h3>
+
+<hr>
+<!--     ***********  STYLE BINDING ************* -->
+<h1>Angular App</h1>
+
+<!--  Style Binding Using Hard Coded  -->
+<h1 style="font-family: sans-serif">Angular App</h1>
+
+
+<!--   Style Using String Interpolation   -->
+<h1 [style.font-family]="fnt">Angular App</h1>
+
+
+<!--  Style Using direct attribute value  -->
+<h1 [style.color]="'violet'">Angular App</h1>
+
+
+<!--   Style using Conditions    -->
+<h1 [style.color]="green_variable ? red : blue">Angular App</h1>
+<!-- Value of IsSet should be true or false --><h3 style="text-align: right">STYLE BINDING</h3>
+<hr>
+
+
+
+<!--   *******************  TWO-WAY BINDING **********************   -->
+<input [(ngModel)]="var_name" type="text">
+  {{var_name}}
+
+<h3 style="text-align: right">TWO-WAY BINDING</h3>
+<hr>
