@@ -14,5 +14,5 @@ export class AppComponent {
   name = "Arun";
   fnt = 'Impact';
   cnt = true;
-  public var_name = "";
+  public var_name = "";  // [(ngModel)] => variable
 }
