@@ -53,15 +53,19 @@
 
 <!--   Style Using String Interpolation   -->
 <h1 [style.font-family]="fnt">Angular App</h1>
+<!-- [fnt] is a variable which contains font family name -->
 
 
 <!--  Style Using direct attribute value  -->
 <h1 [style.color]="'violet'">Angular App</h1>
+<!-- violet is not variable it is value for style.color 
+NOTE: violet is under ''(single quotesion) it meanse angular cli ignore the process of checking this variable
+is present or not -->
 
 
 <!--   Style using Conditions    -->
 <h1 [style.color]="green_variable ? red : blue">Angular App</h1>
-<!-- Value of IsSet should be true or false --><h3 style="text-align: right">STYLE BINDING</h3>
+<!-- Value of green_variable should be true or false --><h3 style="text-align: right">STYLE BINDING</h3>
 <hr>
 
 
